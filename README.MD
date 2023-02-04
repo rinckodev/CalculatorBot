@@ -1,7 +1,7 @@
 # Calculator Bot
 
 Apenas uma calculadora simples feita em um bot de discord.
-O bot é escrito em typescript e utiliza `discord.js v14` e os recursos de comandos de barra (Slash Commands).
+O bot é escrito em typescript, utiliza `discord.js v14` e os recursos de comandos de barra (Slash Commands).
 
 
 ## Como utilizar
@@ -39,6 +39,6 @@ Caso o histórico exceda o limite de caracteres do embed, ele será enviado em f
 
 ## Operação inválida
 
-Se o usuário digitar uma operação que inválida, "ERRO" é exibido no input
+Se o usuário digitar uma operação inválida, "ERRO" é exibido no input
 
 ![Exemplo de erro](images/calculator-error.png)
