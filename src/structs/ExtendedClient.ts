@@ -1,5 +1,5 @@
 import { Client, Partials, Collection, ApplicationCommandDataResolvable, ClientEvents, ButtonInteraction, 
-     ModalSubmitInteraction, AnySelectMenuInteraction, GatewayIntentBits } from "discord.js";
+     ModalSubmitInteraction, AnySelectMenuInteraction, GatewayIntentBits, IntentsBitField } from "discord.js";
 import { CommandType } from "./Command";
 import dotenv from 'dotenv';
 import path from 'path';
@@ -15,7 +15,11 @@ export default class ExtendedClient extends Client {
 
     constructor(){
         super({
-            intents: [],
+            intents: [
+                GatewayIntentBits.Guilds,
+                GatewayIntentBits.GuildMessages,
+
+            ],
             partials: [
                 Partials.Channel, Partials.GuildMember,
                 Partials.GuildScheduledEvent, Partials.Message,
